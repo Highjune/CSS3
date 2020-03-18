@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector 방법1 - tag선택자 / Selector 방법 2 - ID 선택자</title>
+
+<!--방법1-->
+    <style> 
+        p{color : red;}
+    </style>
+<!--tag선택자의 한계는 p태그가 2개면 좀 곤란, 특정한 p에 적용 못하고 모든 p에 대해서 하기 때문에 안좋음-->
+
+<!--방법2-->
+    <style>
+        p#first{color : red;}
+        p#second{color : blue;}
+    </style>
+<!--ID는 샾# 클래스는 점.-->
+
+
+</head>
+<body> <!--아래는 방법 2번째로 ID붙였음-->
+    <p id = "first">Hello</p>
+    <p id = "second">World</p>
+</body>
+</html>

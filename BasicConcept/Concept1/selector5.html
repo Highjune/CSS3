@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector 방법6 - 자손(descedent) 선택자</title> <!--자식만 해당함. 손자와 증손자 등은 해당X, -->
+    <style>
+        div > p {
+            color : red;
+        }
+        /* div p {} 로 조건을 준다면 자손도 포함이므로 div 밑의 span 밑의 <p>I will not be styled.</p>도 포함된다
+    </style>
+    
+
+</head>
+
+<body>
+
+    <div>
+        <h2>My name is Donald</h2>
+        <p>I live in Duckburg.</p>
+    </div>
+
+    <div>
+        <span>
+            <p>I will not be styled.</p>
+        </span>
+    </div>
+
+</body>
+
+</html>

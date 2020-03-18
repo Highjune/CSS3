@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector 방법3 - class 선택자</title>
+    <style>
+        .first{
+
+            background-color: green;
+        }
+
+        .second{
+
+            background-color: yellow;
+
+        }
+
+    </style>
+</head>
+<body> <!--같은 옵션값이 필요한 것들은 class로 묶고, 그 안에서 다시 id로 구별(모든 p태그에 일일이 다 다른 ID줄수는 없으니)--> 
+    <!--headline과 p태그는 블럭레벨 이라서 한 줄 전체에 다 해당된다. h와 p는 같은 줄에 안됨-->
+    <h1 class = "second">Selector 연습하기</h1>
+    
+    <p class = "first">Hello</p>
+    <p class = "second">World</p>
+    <p class = "first">HTML5</p>
+    <p class = "second">css3</p>
+    
+</body>
+</html>

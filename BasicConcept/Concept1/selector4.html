@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector 방법5 - 자손선택자</title> 
+    <!--자식선택자와 다른것임, 자손은 그 밑에 모든 것 다 선택되는 것임-->
+
+    <!--section 에서 한칸이상 띄우고 '자식'(여기서는 ul) 쓰면 됨-->
+    <style>
+        section ul {   
+            color : red;          
+        }
+    </style>
+</head>
+
+
+<body> <!--section의 자손에만 적용하기 위해서-->
+    <h3>Headline</h3>
+
+    <p>Paragraph</p>
+
+    <section>
+        <!--다음은 section의 자손-->
+        <h4>Small Headline</h4>
+        <ul>Web Sripts
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>EcmaScript</li>
+        </ul>
+    </section>
+
+<!--얘들은 section의 자손이 아니다-->
+        <ul>Databases
+            <li>Oracle</li>
+            <li>MariaDB</li>
+            <li>MySQL</li>
+        </ul>
+</body>
+
+</html>
