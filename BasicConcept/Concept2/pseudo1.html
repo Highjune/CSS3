@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상선택자 - 구조적</title>
+    <style>
+        /* local에선 안먹을 수도 있다. -> live 서버에서 확인할것. */
+       p:nth-child(2){color: red;} /*  2번째에 마침 p가 있어야 한다.  */
+       div:nth-child(6){background-color: violet;}  /*  6번째에 마침 div가 있어야 한다.  */
+       p:nth-of-type(2){color: blue;}
+       p:nth-of-type(3){background-color: blueviolet;}
+
+    </style>
+</head>
+<body>
+    <!-- child 가 들어가면  부모입장에서 세는것이고, of 가 들어가면 형제들끼리중에 자신이 몇번재인지 센다. -->
+    <h2>아이유</h2>
+    <p>해수</p>
+    <div>이지안</div>
+    <p>필숙</p>
+    <h3>장만월</h3>
+    <div>신디</div>
+    <p>이지은</p>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table 속성</title>
+    <style>
+        table, th, td{
+            border-color: black red green blue; /*2개를 쓰면 전자가 위아래, 후자가 좌우 // 4개를 쓰면 위, 우, 하, 좌(시계방향) */
+            border-style : solid double dotted dashed;
+            /* border-width : 0px 2px 0px 2px */ /*0값을 주면 안 보임.*/
+            border-width : 1px 1px 1px 1px;
+            border-collapse : collapse;
+            width : 200px;
+            height : 150px;
+            
+            margin-left : auto;
+            margin-right : auto;
+        }
+        table{
+            /* border-top-color : black;
+            border-left-color : red;
+            border-bottom-color : green;
+            border-right-color : blue; */
+        }
+    </style>
+
+</head>
+<body>
+    <table border = "1">
+
+        <tr><th>학번</th><th>이름</th><th>국어</th></tr>
+        <tr><td>2019-01</td><td>한지민</td><td>90</td></tr>
+
+
+    </table>
+</body>
+</html>
+
+
+
+
+
+
+

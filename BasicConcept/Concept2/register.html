@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동아리 가입서</title>
+    <link rel="stylesheet" href="css/gaip.css" type="text/css">
+</head>
+<body>
+    <h1>동아리 가입서</h1>
+    <table border = "1">
+        <tr>
+            <th>동아리 명</th>
+            <td>카리스마</td>
+        </tr>
+        <tr>    
+            <th>이름</th>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <th>학부/학과</th>
+            <td>
+                <select name="major">
+                    <option value="">인터넷 공학부</option>
+                    <option value="">공연예술학부</option>
+                    <option value="">외국어학부</option>
+                    <option value="">컴퓨터 공학과</option>
+                    <option value="">멀티&게임 공학과</option>
+                    <option value="">영어 영문과</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>학년</th>
+            <td>
+                <input type="radio" name="year" checked>1학년 &nbsp;&nbsp;
+                <input type="radio" name="year">2학년 &nbsp;&nbsp;
+                <input type="radio" name="year">3학년 &nbsp;&nbsp;
+                <input type="radio" name="year">4학년 &nbsp;&nbsp;
+            </td>
+        </tr>
+        <tr>
+            <th>학번</th>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <th rowspan="2">연락처</th>
+            <td>
+                <input type="radio" name="tel"> 집&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="tel"> 휴대폰
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text"> - <input type="text"> - <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <th>가입 동기</th>
+            <td>
+                <textarea name="" id="" cols="30" rows="10" placeholder="카리스마의 어떤 점을 보고 가입하고 싶으셨나요?"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <th>자기 소개</th>
+            <td>
+                <textarea name="" id="" cols="30" rows="10" placeholder="당신은 어떤 사람인가요?"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="가입하기"> 
+                <input type="reset" value="취소하기"> 
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
